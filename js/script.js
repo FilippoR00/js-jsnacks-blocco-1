@@ -34,23 +34,32 @@
 // Verificare tramite una funzione che le due parole abbiano la stessa lunghezza.
 // Se hanno la stessa lunghezza, stamparle entrambe altrimenti stampare la più lunga delle due.
 
-let parola1 = prompt("Inserisci una parola:")
-let parola2 = prompt("Inserisci un'altra parola:")
+// let parola1 = prompt("Inserisci una parola:")
+// let parola2 = prompt("Inserisci un'altra parola:")
 
-if(parola1.length == parola2.length){
-    document.body.innerHTML += `<div>${parola1}</div>`
-    document.body.innerHTML += `<div>${parola2}</div>`
-    console.log(parola1, parola2);
-} else if (parola1.length > parola2.length){
-    document.body.innerHTML += `<div>${parola1}</div>`
-    console.log(parola1);
-} else {
-    document.body.innerHTML += `<div>${parola2}</div>`
-    console.log(parola2);
+// if(parola1.length == parola2.length){
+//     document.body.innerHTML += `<div>${parola1}</div>`
+//     document.body.innerHTML += `<div>${parola2}</div>`
+//     console.log(parola1, parola2);
+// } else if (parola1.length > parola2.length){
+//     document.body.innerHTML += `<div>${parola1}</div>`
+//     console.log(parola1);
+// } else {
+//     document.body.innerHTML += `<div>${parola2}</div>`
+//     console.log(parola2);
 
-}
+// }
 
 // ***********************************************************
 
 //     JSnack 3
 // Stampa le potenze di 2 fino a 1000.
+
+let N = 2;
+
+document.body.innerHTML += `<div>${N}</div>`
+
+while(N <= 1000){
+    N = N * 2
+    document.body.innerHTML += `<div>${N}</div>`
+}
